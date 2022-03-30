@@ -418,6 +418,7 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
     width: 100%;
     max-width: 100%;
     margin: auto;
+    transition-delay: 0.3s;
 }
 
 .visual .inner{
@@ -867,25 +868,27 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 .season-product .inner{
     height: 400px;
     margin: auto;
+    position: relative;
+    width: 100%;
 }
 
 .season-product .inner .product{
     position: absolute;
-    left: 150px;
+    left: 450px;
     top: 90px;
 }
 
 .season-product .inner .bean_left{
     position: absolute;
-    left: -250px;
-    width: 50%;
+    left: 0;
+    width: 500px;
     height: 580px;
 }
 
 .season-product .inner .bean_right{
     position: absolute;
-    right: -210px;
-    width: 50%;
+    right: 0px;
+    width: 500px;
     height: 580px
 }
 
@@ -898,7 +901,7 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 .season-product .text-group{
     position: absolute;
     top: 200px;
-    right: 200px;
+    right: 550px;
 }
 .season-product .text-group .more{
     position: absolute;
@@ -910,6 +913,8 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 }
 
 
+
+
 .season-product .title,
 .season-product .description{
     margin-bottom: 10px;
@@ -918,9 +923,12 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 /* reserve */
 
 .reserve-coffee{
-    background: url(../imges/main/reserve_2022_ethiopia_visual_bg.jpg);
+    background: url(../imges/main/reserve_2022_ethiopia_visual.jpg);
     position: relative;
     margin: auto;
+    width: 100%;
+    max-width: 100%;
+
 }
 
 .reserve-coffee .inner{
@@ -932,25 +940,25 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
     position: absolute;
     top: 90px;
     left: 120px;
-    z-index: 0;
+    z-index: 5;
 }
 
 .reserve-coffee .text-group{
     position: absolute;
-    top: 104px;
-    left: 430px;
+    top: 0px;
+    right: 0;
     width: 100%;
 }
 
 .reserve-coffee .text-group img{
     position: absolute;
-    left: -350px;
+    left: 100px;
     margin: auto;
     z-index: 1;
-    width: 28%;
-    height: -100px;
-    top: -100px;
-    left: 600px;
+    width: 100%;
+    height: 380px;
+    top: 0px;
+    z-index: 0;
 } 
 
 .reserve-coffee .text-group .more{
@@ -961,7 +969,8 @@ header nav ul.main-menu li.item .item__contents .contents__texture p{
 
 .reserve-coffee .text-group .more .btn{
     position: absolute;
-    left: 300px;
+    left: 350px;
+    top: 100px;
 }
 
 /* .reserve-coffee .reserve{
