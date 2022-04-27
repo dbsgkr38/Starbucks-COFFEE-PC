@@ -146,26 +146,6 @@ promotionToggleBtn.addEventListener('click', function(){
     }
 });
 
-// -------플로팅이미지-------
-function random(min, max){
-    // toFixed
-    return parseFloat((Math.random() * (max - min) + min).toFixed(2));
-}
-
-function floatingObject (selector, delay, size){
-    // gsop문법 => gsap.to(요소, 지속시간초단위, 옵션)
-    gsap.to(selector, random(1.5,2.5),{
-        y : size,
-        repeat : -1, //반복 설정(-1은 옵션에서 무한반복)
-        yoyo : true, //한번 재생된 애니메이션을 다시 뒤로 재생시킨다.
-        ease: Power1.easeOut,
-        delay : random(0, delay),
-    })
-}
-floatingObject('.floating1',1,15);
-floatingObject('.floating2',0.5,15);
-floatingObject('.floating3',1.5,15);
-
 
 // -------AWARDS-------
 const swiper1 = new Swiper('.awards .swiper', {
